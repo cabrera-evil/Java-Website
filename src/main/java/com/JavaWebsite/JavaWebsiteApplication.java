@@ -1,13 +1,13 @@
-package com.java.fullStackCourse;
+package com.JavaWebsite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FullStackCourseApplication {
+public class JavaWebsiteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FullStackCourseApplication.class, args);
+		SpringApplication.run(JavaWebsiteApplication.class, args);
 	}
 
 }

@@ -1,6 +1,6 @@
-package com.java.fullStackCourse.controllers;
+package com.JavaWebsite.controllers;
 
-import com.java.fullStackCourse.models.user;
+import com.JavaWebsite.models.*;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 public class userController {
-
     @RequestMapping(value = "user/{id}")
     public user getUser(@PathVariable Long id){
         user userData = new user();

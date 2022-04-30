@@ -1,4 +1,4 @@
-package com.java.fullStackCourse.models;
+package com.JavaWebsite.models;
 
 public class user {
     private Long id;
@@ -56,4 +56,5 @@ public class user {
         this.id = id;
     }
 }
+
 
