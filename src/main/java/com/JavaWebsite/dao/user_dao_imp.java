@@ -6,16 +6,21 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
 @Transactional
 public class user_dao_imp implements user_dao{
+
+    @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    @Transactional
     public List<user> getUser() {
+
+        String query = "FROM user";
+        List<user> result = entityManager.createQuery(query).getResultList();
         return null;
     }
 }

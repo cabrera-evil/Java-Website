@@ -15,7 +15,7 @@ public class user_controller{
         user userData = new user();
         userData.setId(id);
         userData.setName("Douglas");
-        userData.setLastName("Cabrera");
+        userData.setLast_name("Cabrera");
         userData.setEmail("douglascabrera.dev@gmail.com");
         userData.setPhone("7166-8439");
         userData.setPassword("safepassword");
@@ -27,7 +27,7 @@ public class user_controller{
     public List<user> getUsers(){
         List<user> users = new ArrayList<>();
 
-        user user_1 = new user();
+        /*user user_1 = new user();
         user_1.setId(1L);
         user_1.setName("Tiger");
         user_1.setLastName("Nixon");
@@ -62,7 +62,7 @@ public class user_controller{
         user_5.setEmail("airisatou@gmail.com");
         user_5.setPhone("648-4912");
 
-        /*users.add(user_1);
+        users.add(user_1);
         users.add(user_2);
         users.add(user_3);
         users.add(user_4);
