@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-public class userController {
+public class user_controller{
     @RequestMapping(value = "user/{id}")
     public user getUser(@PathVariable Long id){
         user userData = new user();
@@ -62,11 +62,11 @@ public class userController {
         user_5.setEmail("airisatou@gmail.com");
         user_5.setPhone("648-4912");
 
-        users.add(user_1);
+        /*users.add(user_1);
         users.add(user_2);
         users.add(user_3);
         users.add(user_4);
-        users.add(user_5);
+        users.add(user_5);*/
         return users;
     }
 
