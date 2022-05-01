@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 async function loadUsers() {
-  const request = await fetch('users', {
+  const request = await fetch('api/tables', {
     method: 'GET',
     headers: {
       'Accept': 'application/json',
@@ -18,7 +18,7 @@ async function loadUsers() {
 
   let listHTML = ' ';
   for(let user of users){
-    let userHTML = '<tr><td>'+user.id+'</td><td>'+user.name+'</td><td>'+user.lastName+'</td><td>'+user.email+'</td><td>'+user.phone+'</td></tr>';
+    let userHTML = '<tr><td>'+user.id+'</td><td>'+user.name+'</td><td>'+user.last_name+'</td><td>'+user.email+'</td><td>'+user.phone+'</td></tr>';
     listHTML += userHTML;
   }
   document.querySelector('#dataTable tbody').outerHTML = listHTML;

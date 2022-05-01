@@ -1,7 +1,9 @@
 package com.JavaWebsite.models;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "users")
+@ToString @EqualsAndHashCode
 public class user {
 
     @Id @Getter @Setter @Column(name = "id")
